@@ -3,7 +3,7 @@ This blog web application is built using Express.js, providing a lightweight and
 
 ## Website preview:
 
-[![Video Thumbnail](image.png)](Website Preview.mp4)
+[![Video Thumbnail](image.png)](WebsitePreview.mp4)
 
 ## Features:
 A comfortable UX with a relaxing and simple UI to simplify user interactions.
