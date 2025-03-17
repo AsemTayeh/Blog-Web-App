@@ -1,5 +1,20 @@
 # Blog-Web-App
-This blog web application is built using Express.js, providing a lightweight and efficient way to manage blog posts. It follows RESTful principles by allowing users to create, read, update, and delete (CRUD) blog entries using HTTP Methods.
+This blog web application is built using Express.js, providing a lightweight and efficient way to manage blog posts. It follows RESTful principles for routing. Allows users to create, read, update, delete blog posts.
+
+Tech stack:
+- NodeJS
+- ExpressJS
+- EJS
+- HTML
+- CSS
+
+How to install:
+1. Clone/Fork the repository.
+2. Download the latest version of NodeJS.
+3. Open the terminal in your editor (CTRL + `) in VSCode.
+4. Run `npm install` to install all dependencies.
+5. Run `node index.js` or `nodemon index.js` Depending on what you use.
+6. Navigate to `localhost:3000` on your browser.
 
 ## Website preview (Downloads a small video on your device):
 
