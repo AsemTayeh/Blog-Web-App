@@ -10,7 +10,7 @@ Tech stack:
 
 How to install:
 1. Clone/Fork the repository.
-2. Download the latest version of NodeJS.
+2. Download the latest version of NodeJS. https://nodejs.org/en/download
 3. Open the terminal in your editor (CTRL + `) in VSCode.
 4. Run `npm install` to install all dependencies.
 5. Run `node index.js` or `nodemon index.js` Depending on what you use.
