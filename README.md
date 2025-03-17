@@ -35,5 +35,11 @@ After updating, they will be greeted with a flash message confirming whether the
 
 Successful update operation:
 
+![alt text](image-5.png)
+
+No changes made:
+
+![alt text](image-6.png)
+
 
 
