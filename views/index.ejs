@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs") %>
+<body>
+    <h1 class="welcome">Blog Manager</h1>
+    <% if(locals.flashMessage) { %>
+        <h2 class="flashMessage"><%= flashMessage %></h2>
+        <% } %> 
+    <div class="container">
+    <div class="div-has-buttons">
+        <a href="/create" class="buttons">Create</a>
+    </div>
+    <div class="div-has-buttons">
+        <a href="/view" class="buttons">View</a>
+    </div>
+</div>
+<h1>Recent blogs: </h1>
+<div class="view-recent">
+    <% if (allBlogs.length === 0) { %> 
+        <h1 style="color: #ff073a">There are no recent blogs!</h1>
+        <% }%>
+    <% if (locals.allBlogs) { %>
+        <% allBlogs.forEach((obj) => { %>
+            <% if (obj) { %>
+                <div>
+                    <a href="/blogs/<%=obj.id%>"><button class="blogCards"><%=obj.title%></button></a>
+                </div>
+            <% } %>
+        <% }) %>
+    <% } %>
+</div>
+</body>
+<%- include("partials/footer.ejs") %>

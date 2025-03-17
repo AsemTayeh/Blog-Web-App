@@ -1,0 +1,17 @@
+<!--HAS TO BE INSIDE A BODY TAG, JUST A VIEW FEATURE, ALSO EJS THAT CALLS IT MUST HAVE GLOBAL ARRAY allBlogs PASSED-->
+<a href="/" class="home-text">Home</a>
+<h1 class="viewHeader">View your blogs</h1>
+<div class="viewContainer">
+<% if (allBlogs.length === 0) { %> 
+    <h1 style="color: #ff073a">There are no blogs to display!</h1>
+    <% } %>
+<% if (locals.allBlogs) { %>
+    <% allBlogs.forEach((obj) => { %>
+        <% if (obj) { %>
+            <div>
+                <a href="/blogs/<%=obj.id%>"><button class="blogCards"><%=obj.title%></button></a>
+            </div>
+        <% } %>
+    <% }) %>
+<% } %>
+</div>

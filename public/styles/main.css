@@ -1,0 +1,292 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #1A1A1D;
+    color: #A64D79;
+}
+.welcome {
+    text-align: center;
+    color: #A64D79
+}
+.flashMessage {
+    text-align: center;
+    color: #39FF14;
+}
+.container {
+    margin-top: 8rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 40%;
+    height: 40vh;
+    gap: 2rem;
+}
+.div-has-buttons {
+    width: 100%;
+    height: 100%;
+}
+.buttons {
+    font-family: "Montserrat", sans-serif;
+    background-color: #6A1E55;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+    border-radius: 15px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+.buttons:hover {
+    color: black;
+    background-color: #A64D79;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.createContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 80vh;
+}
+.title {
+    border-radius: 10px;
+    height: 3rem;
+    width: 20rem;
+    font-size: 1.1rem;
+    background-color: white;
+    border: none;
+    color:#1A1A1D;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+.body {
+    border-radius: 10px;
+    font-size: 1.1rem;
+    height: 20rem;
+    width: 60rem;
+    background-color: white;
+    border: none;
+    color:#1A1A1D;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+.createHeader {
+    text-align: center;
+}
+.createSubmit {
+    font-family: "Montserrat", sans-serif;
+    background-color: #6A1E55;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    width: 10rem;
+    height: 5rem;
+    border: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+.createSubmit:hover {
+    color: black;
+    background-color: #A64D79;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.update-delete {
+    display: flex;
+    justify-content: space-evenly;
+}
+.delete {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ff073a;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    width: 10rem;
+    height: 5rem;
+    border: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+.delete:hover {
+    color: black;
+    background-color: #ff073a80;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.viewHeader {
+    text-align: center;
+}
+
+.viewContainer {
+    display: flex;
+    height: 80vh;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.blogCards {
+    font-family: "Montserrat", sans-serif;
+    background-color: #6A1E55;
+    font-weight: 700;
+    border-radius: 15px;
+    height: 10rem;
+    width: 20rem;
+    font-size: 2rem;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    border: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.home-button {
+    font-family: "Montserrat", sans-serif;
+    background-color: #6A1E55;
+    font-weight: 700;
+    color: white;
+    border-radius: 15px;
+    height: 4rem;
+    width: 8rem;
+    font-size: 1.5rem;
+    border: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-button:hover {
+    color: black;
+    background-color: #A64D79;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.blogCards:hover {
+    color: black;
+    background-color: #A64D79;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.view-other {
+    display: flex;
+    justify-content: center;
+}
+.home-button-updateDel {
+    font-family: "Montserrat", sans-serif;
+    background-color: #6A1E55;
+    font-weight: 700;
+    color: white;
+    border-radius: 15px;
+    width: 10rem;
+    height: 5rem;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.home-button-updateDel:hover {
+    color: black;
+    background-color: #A64D79;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.blogFlex {
+    display: flex;
+}
+.updateSubmit {
+    font-family: "Montserrat", sans-serif;
+    background-color: #39FF14;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    width: 10rem;
+    height: 5rem;
+    border: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+.updateSubmit:hover{
+    color: black;
+    background-color: #39FF1480;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.home-text {
+    font-size: 2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: #A64D79;
+}
+
+.home-text:hover{
+    color: white;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.view-recent {
+    display: flex;
+    height: 30vh;
+    gap: 1rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        gap: 1rem;
+        margin-top: 6rem;
+        row-gap: 1rem;
+    }
+    .buttons {
+        height: 100%;
+    }
+    .title {
+        width: 6rem;
+    }
+    .body {
+        height: 6rem;
+        width: 18rem;
+    }
+    .createSubmit {
+        width: 5rem;
+        height: 3rem;
+    }
+    .blogCards {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 6rem;
+        width: 12rem;
+    }
+    .updateSubmit {
+        width: 5rem;
+        height: 3rem;
+    }
+    .view-container {
+        height: 100vh;
+        width: 100%;
+    }
+    .delete {
+        width: 5rem;
+        height: 3rem;
+    }
+}
+

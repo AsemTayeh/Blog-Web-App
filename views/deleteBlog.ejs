@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+<body>
+    <% if (locals.allBlogs) { %>
+        <form action="/delete" method="POST">
+        <% allBlogs.forEach((obj) => { %>
+            <div>
+                <% if (obj) { %>
+                <input type="checkbox" name="toDeleteIDs" value="<%= obj.id %>">
+                Title: <%= obj.title %> <br> Body: <%= obj.body %> <br> ID: <%= obj.id %> <hr>
+            </div>
+            <% } %>
+        <% }) %>
+        <div>
+            <input type="submit" name="submit" value="delete">
+        </div>
+        </form>
+    <% } %>
+    <a href="/">Home</a>
+</body>
+<%- include("partials/footer.ejs") %>
