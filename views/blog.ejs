@@ -7,7 +7,7 @@
         <div class="createContainer">
             <form action="/update/<%=blog.id%>" method="POST">
                 <div>
-                    <input type="text" class="title" name="title" maxlength="10" value="<%=blog.title%>" required>
+                    <input type="text" class="title" name="title" value="<%=blog.title%>" required>
                 </div>
                 <div>
                     <textarea class="body" name="body" required><%=blog.body%></textarea>

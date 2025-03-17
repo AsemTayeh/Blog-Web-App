@@ -9,7 +9,7 @@
     <% allBlogs.forEach((obj) => { %>
         <% if (obj) { %>
             <div>
-                <a href="/blogs/<%=obj.id%>"><button class="blogCards"><%=obj.title%></button></a>
+                <a href="/blogs/<%=obj.id%>"><button class="blogCards"><%=obj.title.slice(0,9)%></button></a>
             </div>
         <% } %>
     <% }) %>
