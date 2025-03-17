@@ -14,7 +14,7 @@ app.use(morgan("dev"));
 
 app.post("/update/:id", (req,res) => {
     const id = req.params.id;
-    const obj = getObjectToDelete(id);
+    const obj = getObject(id);
 
     if (obj.title === req.body["title"] && obj.body === req.body["body"]) {
         flashMessage = "No changes made, blog unchanged!";
@@ -31,7 +31,7 @@ app.post("/update/:id", (req,res) => {
 
 app.get("/blogs/:id", (req, res) => {
     let id = req.params.id;
-    let obj = getObjectToDelete(id);
+    let obj = getObject(id);
     console.log(obj);
     res.render("blog.ejs", {
         blog: obj
@@ -40,7 +40,7 @@ app.get("/blogs/:id", (req, res) => {
 
 app.post("/delete/:id", (req,res) => {
     let id = req.params.id;
-    let obj = getObjectToDelete(id);
+    let obj = getObject(id);
     console.log(obj);
     allBlogs = allBlogs.filter((blog) => blog.id != obj.id);
     flashMessage = "Blog deleted successfully!";
@@ -87,7 +87,7 @@ app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
 });
 
-function getObjectToDelete(id) {
+function getObject(id) {
     for (let i = 0; i < allBlogs.length; i++) {
         if(allBlogs[i]) {
             if (allBlogs[i].id === parseInt(id)) {
