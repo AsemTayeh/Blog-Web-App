@@ -27,7 +27,7 @@ Users can view all the blogs they've created, with the option to edit or delete 
 ![alt text](image-3.png)
 
 ### Update created blogs:
-Users can edit any blog they've created by selecting it from the view menu. This allows them to make changes to the title or body of the post as needed.
+Users can edit any blog they've created by selecting it from the view menu or from the recent blogs section in the home page. This allows them to make changes to the title or body of the post as needed.
 
 ![alt text](image-4.png)
 
@@ -41,5 +41,12 @@ No changes made:
 
 ![alt text](image-6.png)
 
+### Delete created blogs:
+Users can delete any blog they've created by selecting it from the view menu or from the recent blogs section in the home page.
 
+![alt text](image-4.png)
+
+Upon successful deletion of a blog, it will disappear from the view page and the recent blog section, as well as a flash message appearing to confirm the action was done successfully
+
+![alt text](image-7.png)
 
